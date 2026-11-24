@@ -8,7 +8,6 @@ namespace Tyuiu.KashinaVE.Sprint5.Task5.V15.Lib
     {
         public double LoadFromDataFile(string path)
         {
-
             string[] lines = File.ReadAllLines(path);
 
             double min = double.MaxValue;
@@ -20,13 +19,12 @@ namespace Tyuiu.KashinaVE.Sprint5.Task5.V15.Lib
 
                 foreach (string numStr in numbers)
                 {
-                 
                     string cleanNum = numStr.Replace('.', ',');
 
                     if (double.TryParse(cleanNum, out double number))
                     {
-
-                        if (number % 5 == 0)
+                       
+                        if (number % 5 == 0 && number > 0)
                         {
                             if (number < min)
                             {
@@ -37,7 +35,6 @@ namespace Tyuiu.KashinaVE.Sprint5.Task5.V15.Lib
                     }
                 }
             }
-
 
             if (found)
             {
