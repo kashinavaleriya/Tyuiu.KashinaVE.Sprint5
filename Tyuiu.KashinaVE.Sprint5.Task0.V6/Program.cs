@@ -9,6 +9,7 @@ namespace Tyuiu.KashinaVE.Sprint5.Task0.V6
             DataService ds = new DataService();
 
             int x = 3;
+
             Console.Title = "Спринт #5 | Выполнила: Кашина В. Е. | ИБКСб-26-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
@@ -30,6 +31,7 @@ namespace Tyuiu.KashinaVE.Sprint5.Task0.V6
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
+
             string res = ds.SaveToFileTextData(x);
 
             Console.WriteLine("Файл: " + res);
